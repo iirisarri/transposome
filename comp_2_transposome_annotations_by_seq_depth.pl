@@ -21,7 +21,7 @@ my $in1 = $ARGV[1];
 
 
 # get annotation info for each infile
-print "\nget annotations from files...\n";
+print STDERR "\nget annotations from files...\n";
 my $annotations0 = get_annotations( $in0 );
 my $annotations1 = get_annotations( $in1 );
 #my $annotations2 = get_annotations( $in2 );
@@ -33,7 +33,7 @@ my %annotations1 = % { $annotations1 };
 #print Dumper $annotations0;
 
 # find intersections between files
-print "\nfind intersections between files...\n\n";
+print STDERR "\nfind intersections between files...\n\n";
 
 my %all_annotations;
 
